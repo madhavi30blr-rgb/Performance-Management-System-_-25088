@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS - Goal & Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Performance Management System</h1>
+        
+        <div class="goal-form">
+            <h2>Create New Goal</h2>
+            <form id="create-goal-form">
+                <input type="number" id="employee_id" placeholder="Employee ID" required>
+                <input type="number" id="manager_id" placeholder="Manager ID" required>
+                <textarea id="description" placeholder="Goal Description" required></textarea>
+                <input type="date" id="due_date" required>
+                <select id="status" required>
+                    <option value="Draft">Draft</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+                <button type="submit">Create Goal</button>
+            </form>
+        </div>
+
+        <div class="goal-list">
+            <h2>All Goals</h2>
+            <ul id="goals-container">
+                </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
